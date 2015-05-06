@@ -13,8 +13,9 @@ net.Receive( "buyClothes", function( len, ply )
 	// Make sure the player can afford
 	if not ply:canAfford( clothingConfig.price ) then
 		DarkRP.notify( ply, 1, 3, "You cannot afford this" )
+		return
 	end
-
+	
 	// Make sure the material they're sending isn't some random one
 	// by comparing it against the config file
 	local found = false

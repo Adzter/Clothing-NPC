@@ -60,12 +60,65 @@ clothingConfig.group01female = {
 	"npigamers/humans/female/group02/fem_survivor7"
 }
 clothingConfig.group02female = clothingConfig.group01female
+clothingConfig.gundealer = {
+	"npigamers/gundealer/casual",
+	"npigamers/gundealer/casual2",
+	"npigamers/gundealer/soldier",
+	"npigamers/gundealer/adidas"
+}
+clothingConfig.medic = {
+	"npigamers/medic/business",
+	"npigamers/medic/business2"
+}
+clothingConfig.hitman = {
+	"npigamers/hitman/adidas",
+	"npigamers/hitman/buckshot",
+	"npigamers/hitman/casual",
+	"npigamers/hitman/convict",
+	"npigamers/hitman/highvis"
+}
+clothingConfig.thief = {
+	"npigamers/thief/black",
+	"npigamers/thief/blue",
+	"npigamers/thief/camo",
+	"npigamers/thief/camo2",
+	"npigamers/thief/casual"
+}
+clothingConfig.swat = {
+	"npigamers/swat/black",
+	"npigamers/swat/blue",
+	"npigamers/swat/green",
+	"npigamers/swat/swat"
+}
+clothingConfig.bmarket = {
+	"npigamers/bmarket/camo",
+	"npigamers/bmarket/biker",
+	"npigamers/bmarket/specops",
+	"npigamers/bmarket/casual"
+}
+clothingConfig.mayor = {
+	"npigamers/mayor/black",
+	"npigamers/mayor/white",
+	"npigamers/mayor/pin"
+}
 
+//====================================
+//	LIST THAT IS SEARCHED THROUGH
+//====================================
 clothingConfig.groups = {
 	clothingConfig.group01male,
 	clothingConfig.group02male,
+	clothingConfig.group03male,
 	clothingConfig.group01female,
 	clothingConfig.group02female,
+	clothingConfig.group03female,
+	clothingConfig.gundealer,
+	clothingConfig.medic,
+	clothingConfig.hitman,
+	clothingConfig.thief,
+	clothingConfig.swat,
+	clothingConfig.bmarket,
+	clothingConfig.mayor
 }
 
 --List of words you can replace

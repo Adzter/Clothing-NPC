@@ -7,6 +7,7 @@
 
 --]]
 
+-- Reset materials when the player changes job
 hook.Add("OnPlayerChangedTeam", "clothingTeamFix", function( ply, before, after )
 	for k,v in pairs( ply:GetMaterials() ) do
 		ply:SetSubMaterial( k, nil )

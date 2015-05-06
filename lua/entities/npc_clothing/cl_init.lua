@@ -60,10 +60,40 @@ local function checkCustomMaterials( str )
 			return string.sub( str, 0, string.len( str )-7 )
 		end
 	end
+	
+	if str[3] then
+		if str[3] == "monk.mdl" then
+			return "gundealer"
+		end
+		
+		if str[3] == "kleiner.mdl" then
+			return "medic"
+		end
+		
+		if str[3] == "leet.mdl" then
+			return "hitman"
+		end
+		
+		if str[3] == "arctic.mdl" then
+			return "thief"
+		end
+		
+		if str[3] == "swat.mdl" then
+			return "swat"
+		end
+		
+		if str[3] == "guerilla.mdl" then
+			return "bmarket"
+		end
+		
+		if str[3] == "breen.mdl" then
+			return "mayor"
+		end
+	end
 end
 
 net.Receive( "sendClothingMenu", function()	
-	local count = 1
+	local count = 0
 	local materialCount = 1
 	local currentTexture = "Loading"
 	local customMaterials = clothingConfig[checkCustomMaterials( LocalPlayer():GetModel() )]
